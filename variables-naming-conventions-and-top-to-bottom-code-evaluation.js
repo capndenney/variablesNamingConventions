@@ -24,9 +24,16 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+/*
+All of the variable names in this code snip are vague and unhelpful.  They are in camelCase, but nothing else.
 
-console.log(d);
+*/
+
+let customerName = "Alice";
+let productQuantity = 5;
+let unitCost = 4;
+const totalCost = unitCost * productQuantity;
+let productName = "item";
+let receipt = customerName + " bought " + productQuantity + " " + productName + "s for $" + totalCost + ".";
+
+console.log(receipt);
